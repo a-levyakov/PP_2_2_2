@@ -17,7 +17,7 @@ public class CarServiceImpl implements CarService {
         return getCars().stream().limit(count).collect(Collectors.toList());
     }
 
-    public static List<Car> getCars() {
+    private static List<Car> getCars() {
         List<Car> result = new ArrayList<>();
 
         result.add(new Car("Bwm", 2011, "black"));
