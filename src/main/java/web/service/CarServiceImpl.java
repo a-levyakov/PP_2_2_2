@@ -13,7 +13,7 @@ public class CarServiceImpl implements CarService {
 
 
     @Override
-    public List<Car> getCarsFromList(int count) {
+    public List<Car> getCountOfCars(int count) {
         return getCars().stream().limit(count).collect(Collectors.toList());
     }
 
